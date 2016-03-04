@@ -11,8 +11,8 @@ node {
 stage 'Checkout'
 node {
 git 'https://github.com/vaiju12p/AssignmentProject.git'
-//stage 'clean'
-//bat 'gradle clean --info'
+stage 'clean'
+bat 'gradle clean --info'
 stage 'build'
 bat 'gradle build --info'
 //stage 'jar'
