@@ -20,9 +20,9 @@ repositories {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId '2'
-            artifactId '2'
-            version '2'
+            groupId '1'
+            artifactId '1'
+            version '1'
             from components.java
         }
     }
