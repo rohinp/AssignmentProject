@@ -24,6 +24,7 @@ publishing {
             artifactId '3'
             version '3'
             from components.java
+            
         }
     }
 }
