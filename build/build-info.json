@@ -1,0 +1,61 @@
+{
+  "version" : "1.0.1",
+  "name" : "TempleteProject",
+  "number" : "1456900377149",
+  "type" : "GRADLE",
+  "buildAgent" : {
+    "name" : "Gradle",
+    "version" : "2.7"
+  },
+  "agent" : {
+    "name" : "Gradle",
+    "version" : "2.7"
+  },
+  "started" : "2016-03-02T12:02:54.115+0530",
+  "durationMillis" : 6892,
+  "principal" : "vaijnathp",
+  "artifactoryPrincipal" : "admin",
+  "artifactoryPluginVersion" : "Unknown",
+  "licenseControl" : {
+    "runChecks" : false,
+    "includePublishedArtifacts" : false,
+    "autoDiscover" : false,
+    "licenseViolationsRecipientsList" : "",
+    "scopesList" : ""
+  },
+  "buildRetention" : {
+    "count" : -1,
+    "deleteBuildArtifacts" : true,
+    "buildNumbersNotToBeDiscarded" : [ ]
+  },
+  "modules" : [ {
+    "id" : ":TempleteProject:unspecified",
+    "artifacts" : [ {
+      "type" : "jar",
+      "sha1" : "fced8717f16ccfb04d74ba447413e757934b1952",
+      "md5" : "c0522c0fc95afcc69cda225c7739f61f",
+      "name" : "2-2.jar"
+    }, {
+      "type" : "pom",
+      "sha1" : "5681b446063d1f86d93415c6d97a044fbf863f53",
+      "md5" : "4368d4f32e40013709960e6912468b35",
+      "name" : "2-2.pom"
+    } ],
+    "excludedArtifacts" : [ ],
+    "dependencies" : [ {
+      "type" : "jar",
+      "sha1" : "7fcf30c25b8f4a9379b9dad0d3f487b25272c026",
+      "md5" : "a5168034046d95e07f4aae3f5e2d1c67",
+      "id" : "org.slf4j:slf4j-api:1.7.13",
+      "scopes" : [ "compile" ]
+    } ]
+  } ],
+  "governance" : {
+    "blackDuckProperties" : {
+      "runChecks" : false,
+      "includePublishedArtifacts" : false,
+      "autoCreateMissingComponentRequests" : false,
+      "autoDiscardStaleComponentRequests" : false
+    }
+  }
+}
