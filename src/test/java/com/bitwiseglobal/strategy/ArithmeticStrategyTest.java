@@ -68,7 +68,7 @@ public class ArithmeticStrategyTest {
 
     {
         Context context=new Context();
-        assertEquals(9,context.doAlgorithm("+",3,6));
+        assertEquals(50,context.doAlgorithm("+",3,6));
 
     }
 
