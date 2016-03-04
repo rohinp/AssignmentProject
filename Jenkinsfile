@@ -10,7 +10,7 @@ node {
 }
 stage 'Checkout'
 node {
-git 'https://github.com/exorcist007/JenkinsWorkflowBuild.git'
+git 'https://github.com/vaiju12p/AssignmentProject.git'
 //stage 'clean'
 //bat 'gradle clean --info'
 stage 'build'
@@ -20,7 +20,7 @@ bat 'gradle build --info'
 }
 stage 'Checkout'
 node {
-git 'https://github.com/exorcist007/TDF-IDF-CascadingDateFormatConversion.git'
+git 'https://github.com/vaiju12p/ModeratorTemplate1.1-1.git'
 //stage 'clean'
 //bat 'gradle clean --info'
 stage 'build'
