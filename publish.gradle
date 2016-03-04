@@ -1,0 +1,30 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.0.0"
+  }
+}
+apply plugin: "com.jfrog.artifactory"
+  
+allprojects { 
+	  apply plugin: 'maven-publish'
+    artifactory {
+        contextUrl = "http://10.30.127.67:9091/artifactory"
+        publish {
+         contextUrl = "http://10.30.127.67:9091/artifactory"
+            repository {
+                repoKey = 'AssignmentreviewTemplate'
+                username = "admin"
+                password = "password"
+                maven = true
+            }
+            
+            defaults {
+            publications ('mavenJava')
+        }
+        }
+        
+    }   
+}
