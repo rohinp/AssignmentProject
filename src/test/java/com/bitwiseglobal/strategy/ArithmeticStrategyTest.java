@@ -16,7 +16,7 @@ public class ArithmeticStrategyTest {
     public void itShouldReturnCorrectAdditionResult()
     {
         AdditionStrategy strategy=new AdditionStrategy();
-        assertEquals(7,strategy.operate(5,2));
+        assertEquals(50,strategy.operate(5,2));
     }
 
     @Test
