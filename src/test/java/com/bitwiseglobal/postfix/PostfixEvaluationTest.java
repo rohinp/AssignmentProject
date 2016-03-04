@@ -22,7 +22,7 @@ public class PostfixEvaluationTest {
         validator.isValidWithSymbols("17 10 + 3 * 9 /");
     
         //when
-        PostfixEvaluator evaluator=new PostfixEvaluator();
+        //PostfixEvaluator evaluator=new PostfixEvaluator();
         
         //then
         assertEquals(9, evaluator.calculate("17 10 + 3 * 9 /"));
