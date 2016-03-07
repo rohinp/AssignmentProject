@@ -12,9 +12,9 @@ stage 'Checkout'
 node {
 git 'https://github.com/vaiju12p/AssignmentProject.git'
 stage 'clean'
-bat 'gradle clean --info'
+sh 'gradle eclipse --info'
 stage 'build'
-bat 'gradle build --info'
+sh 'gradle artifactoryPublish --info'
 //stage 'jar'
 //bat 'gradle jar --info'
 }
@@ -22,9 +22,9 @@ stage 'Checkout'
 node {
 git 'https://github.com/vaiju12p/ModeratorTemplate1.1-1.git'
 stage 'clean'
-bat 'gradle clean --info'
+sh 'gradle clean --info'
 stage 'build'
-bat 'gradle build --info'
+sh 'gradle build --info'
 //stage 'jar'
 //bat 'gradle jar --info'
 }
