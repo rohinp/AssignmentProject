@@ -1,16 +1,8 @@
 #!groovy
 
-stage 'setJava'
-node {
-
-    // env.JAVA_HOME = "C:\\Program Files\\Java\\jdk1.8.0_66"
-     env.JAVA_HOME = "C:\\Program Files (x86)\\Java\\jdk1.8.0_11"
-     echo env.JAVA_HOME
-
-}
 stage 'Checkout'
 node {
-git 'https://github.com/vaiju12p/AssignmentProject.git'
+git 'https://github.com/rohinp/AssignmentProject.git'
 stage 'clean'
 sh 'gradle eclipse --info'
 stage 'build'
