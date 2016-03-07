@@ -18,6 +18,7 @@ allprojects {
                 repoKey = 'AssignmentreviewTemplate'
                 username = "admin"
                 password = "password"
+                println '***************************************************************************'
                 maven = true
             }
             
