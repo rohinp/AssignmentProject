@@ -11,8 +11,8 @@ node {
 stage 'Checkout'
 node {
 git 'https://github.com/vaiju12p/AssignmentProject.git'
-//stage 'clean'
-//bat 'gradle clean --info'
+stage 'clean'
+bat 'gradle clean --info'
 stage 'build'
 bat 'gradle build --info'
 //stage 'jar'
@@ -28,17 +28,7 @@ bat 'gradle build --info'
 //stage 'jar'
 //bat 'gradle jar --info'
 }
-//stage 'customTask'
-//node{
-  //  sleep time: 15000, unit: 'NANOSECONDS'
-//this is a custom task that gets called irrespective of the repositories being called
-//bat 'gradle sayHello'
-//}
-//stage 'jar'
-//node{
-//extra batch command called: may be ignored
-//bat 'gradle clean jar --info'
-//}
+
 stage name: 'Production', concurrency: 1
 node {
  echo 'Production server looks to be alive'
